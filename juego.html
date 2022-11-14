@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tpfinal.css">
+    <title>Historia de la programación</title>
+</head>
+
+<body>
+    <nav>
+        <a href="./index.html" id="logo">
+            <svg width="80" height="64">
+                <rect class="pc" x="3" y="0" width="74" height="62" fill="#629597"></rect>
+                <rect class="pc" x="10" y="5" width="60" height="35" rx="5" fill="#3F6797"></rect>
+                <rect class="pc2" x="15" y="10" width="50" height="25" rx="3" id="mon2" fill="#B1D5E4"></rect>
+                <rect class="pc" x="0" y="62" width="80" height="2" fill="#2D2D2D"></rect>
+                <polygon class="pc" points="15 45 ,65 45,80 62,0 62" fill="#3F6797" id="tec1"></polygon>
+                <polygon class="pc2" points="20 49 ,60 49,70 58,10 58" fill="#B1D5E4" id="tec2"></polygon>
+            </svg>
+
+
+        </a>
+        <ul class="menu">
+            <li>
+                <a href="./historia.html" class="navLink">HISTORIA</a>
+            </li>
+            <li>
+                <a href="./juego.html" class="navLink">JUEGUEMOS</a>
+            </li>
+
+        </ul>
+
+    </nav>
+    <header>
+        <h1>JUEGUEMOS UN POCO</h1>
+    </header>
+    <main>
+        <h2>Armemos el ropecabezas y veamos que imagen es...</h2>
+        <div id="juego">
+            <div class="contenedor" ondragenter="colocar(0)">
+                <p>Arrastre y suelte la imagen aquí</p>
+
+            </div>
+            <div class="contenedor" ondragenter="colocar(1)">
+                <p>Arrastre y suelte la imagen aquí</p>
+
+            </div>
+            <div class="contenedor" ondragenter="colocar(2)">
+                <p>Arrastre y suelte la imagen aquí</p>
+
+            </div>
+
+
+                <img class="tarjeta" src="./assets/imagenes/rompe2.png" ondragstart="arrastre(event, 0)" alt="rompecabezas 2">
+                
+         
+                <img class="tarjeta" src="./assets/imagenes/rompe3.png" ondragstart="arrastre(event, 1)" alt="rompecabezas 3">
+
+         
+                <img class="tarjeta" src="./assets/imagenes/rompe1.png" ondragstart="arrastre(event, 2)" alt="rompecabezas 1">
+
+       
+
+            <button id="reiniciar">REINICIAR</button>
+        </div>
+
+    </main>
+    <footer>
+        <div id="logoPie">
+            <svg width="80" height="64">
+                <rect class="pc" x="3" y="0" width="74" height="62" fill="#629597"></rect>
+                <rect class="pc" x="10" y="5" width="60" height="35" rx="5" fill="#3F6797"></rect>
+                <rect class="pc2" x="15" y="10" width="50" height="25" rx="3" id="mon2" fill="#B1D5E4"></rect>
+                <rect class="pc" x="0" y="62" width="80" height="2" fill="#2D2D2D"></rect>
+                <polygon class="pc" points="15 45 ,65 45,80 62,0 62" fill="#3F6797" id="tec1"></polygon>
+                <polygon class="pc2" points="20 49 ,60 49,70 58,10 58" fill="#B1D5E4" id="tec2"></polygon>
+            </svg>
+        </div>
+        
+        <h4>
+            PROGRAMACION </br> E </br> HISTORIA
+        </h4>
+
+        <p id="textoPie">
+            Sitio con fines educativos - Recreado por Jorge Bover
+        </p>
+
+
+    </footer>
+
+    <script src="./juego.js"></script>
+</body>
+
+</html>
